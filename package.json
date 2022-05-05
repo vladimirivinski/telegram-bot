@@ -1,0 +1,16 @@
+{
+  "name": "rick_sanchez_bot",
+  "version": "1.0.0",
+  "description": "my first telegram bot",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js"
+  },
+  "author": "Vladimir Ivinsky",
+  "license": "ISC",
+  "dependencies": {
+    "node-telegram-bot-api": "^0.57.0",
+    "nodemon": "^2.0.16"
+  }
+}
