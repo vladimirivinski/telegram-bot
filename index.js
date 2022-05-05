@@ -56,13 +56,10 @@ const start = () => {
         const data = msg.data;
         const chatId = msg.message.chat.id;
 
-        console.log(msg)
-        console.log(data)
-        console.log(chats[chatId])
         if(data === '/again'){
             return await startGame(chatId);
         }
-        if(data === chats[chatId]){
+        if(data == chats[chatId]){
             await bot.sendSticker(chatId, `./assets/wubadaRick.webp`);
             return await bot.sendMessage(chatId, `You win - ${chats[chatId]}???`, againOptions); 
         } else {
