@@ -2,8 +2,8 @@ process.env.NTBA_FIX_319 = 1;
 const TelegramBot = require("node-telegram-bot-api");
 const { Configuration, OpenAIApi } = require("openai");
 const { gameOptions, againOptions } = require("./options.js");
-// const token = '5387207809:AAHNjshL9Z-ngf1NgFSzuaff67nsVgFuAzo'; // OLD BOT TOKEN
-const token = "5707862658:AAFTsoZHg6iobXjPc83Hu_e6e744HwRD390"; // GeekRick_Bot
+// const token = ''; // OLD BOT TOKEN
+const token = ""; // GeekRick_Bot
 
 //======================================================================================================
 //======================================================================================================
@@ -12,7 +12,7 @@ const token = "5707862658:AAFTsoZHg6iobXjPc83Hu_e6e744HwRD390"; // GeekRick_Bot
 const bot = new TelegramBot(token, { polling: true });
 
 const configuration = new Configuration({
-	apiKey: "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",
+	apiKey: "",
 });
 const openai = new OpenAIApi(configuration);
 
